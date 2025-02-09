@@ -51,4 +51,72 @@ a:hover {
 }
 /*HERO*/
 /*Main*/
+body {
+  font-family: "Raleway", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-left: 1rem;
+  color: #321a13;
+}
+
+.products {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.item {
+  background: white;
+  max-width: 12rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item img {
+  width: 10rem;
+  height: auto;
+  margin-top: 1rem;
+}
+
+.button1 {
+  background: #e1dfd2;
+  color: #321a13;
+
+  padding: 0.4rem 2rem 0.4rem 2rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.button1:hover {
+  background: #604735;
+  color: white;
+}
+
+.button2 {
+  background: #e1dfd2;
+  color: #321a13;
+
+  padding: 0.4rem 2.4rem 0.4rem 2.4rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.button2:hover {
+  background: #604735;
+  color: white;
+}
+
 /*footer*/
