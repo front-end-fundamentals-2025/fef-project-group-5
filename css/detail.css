@@ -51,4 +51,205 @@ a:hover {
 }
 /*HERO*/
 /*Main*/
+body {
+  font-family: "Raleway", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  margin-top: 0;
+  color: #321a13;
+}
+
+.description {
+  color: #555;
+}
+
+.product-details {
+  margin-top: 2.5rem;
+}
+.collapsible {
+  margin-top: 1.8rem;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.active,
+.collapsible:hover {
+  background-color: #e1dfd2;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+.collapsible:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #604735;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.content p {
+  color: #321a13;
+  font-size: 0.9rem;
+}
+label,
+select,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+.big-price {
+  color: #321a13;
+
+  font-family: "Raleway", serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.price {
+  color: #321a13;
+
+  font-family: "Raleway", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.button {
+  background: #604735;
+  color: white;
+  padding: 0.7rem 5rem 0.7rem 5rem;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background: #c8bda9;
+  color: #321a13;
+}
+
+.suggestions {
+  margin-top: 4rem;
+  width: 100%;
+}
+h2 {
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.products {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.item {
+  background: white;
+  max-width: 12rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item img {
+  width: 10rem;
+  height: auto;
+  margin-top: 1rem;
+}
+.button1 {
+  background: #e1dfd2;
+  color: #321a13;
+
+  padding: 0.4rem 2rem 0.4rem 2rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.button1:hover {
+  background: #604735;
+  color: white;
+}
+
+.reviews {
+  margin-top: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.customer {
+  background: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.review-info {
+  flex: 1;
+}
+
+.rating {
+  font-size: 18px;
+}
 /*footer*/
