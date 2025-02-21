@@ -71,8 +71,9 @@ h1 {
 .products {
   display: flex;
   overflow-x: auto;
-  gap: 20px;
+  gap: 3vh;
   padding-bottom: 10px;
+  padding: 3vh;
 }
 
 .item {
@@ -88,6 +89,9 @@ h1 {
   width: 10rem;
   height: auto;
   margin-top: 1rem;
+}
+.item:hover {
+  box-shadow: 7px 7px 3px lightgray;
 }
 
 .button1 {
