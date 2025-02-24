@@ -87,11 +87,14 @@ h1 {
 
 .item img {
   width: 10rem;
-  height: auto;
   margin-top: 1rem;
+  object-fit: cover;
 }
-.item:hover {
-  /*add a zoom animation here*/
+
+/*FIGURE OUT HOW TO FIX OVERFLOW HERE*/
+.item img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in;
 }
 
 .button1 {
