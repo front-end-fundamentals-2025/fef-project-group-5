@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 /*Navigation*/
 
 header {
@@ -257,3 +267,49 @@ h2 {
   font-size: 18px;
 }
 /*footer*/
+footer {
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #e1dfd2;
+  color: #604735;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.footer-logo img {
+  height: 60px;
+}
+.footer-nav {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.footer-nav a {
+  color: #604735;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 2vh;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+.paragraph {
+  font-size: 14px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.5;
+}
+.footer-bottom {
+  font-size: 2vh;
+  margin-top: 4vh;
+}
+.footer-bottom a {
+  color: #604735;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
