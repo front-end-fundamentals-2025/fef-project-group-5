@@ -118,7 +118,7 @@ a:hover {
 .discover-btn {
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 50%;
+  border-radius: 1rem;
   border: 2px solid white;
   color: white;
   cursor: pointer;
@@ -211,7 +211,7 @@ a:hover {
 .buy-btn {
   padding: 10px 20px;
   font-size: 0.7rem;
-  border-radius: 50%;
+  border-radius: 1rem;
   border: 2px solid white;
   cursor: pointer;
   transition: 0.3s;
@@ -239,6 +239,12 @@ figcaption {
   font-style: normal;
   font-size: 2vh;
   margin-top: 10px;
+}
+@media screen and (max-width: 800px) {
+  .collection-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* SERVICES SECTION */
@@ -318,7 +324,7 @@ figcaption {
 .btn {
   padding: 15px 25px;
   font-size: 0.7rem;
-  border-radius: 50%;
+  border-radius: 1rem;
   border: 2px solid #604735;
   cursor: pointer;
   transition: 0.3s;

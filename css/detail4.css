@@ -125,7 +125,6 @@ body {
   object-fit: contain; /* Maintain image proportions */
   border-radius: 4px;
 }
-
 .product-info {
   flex: 1;
 }

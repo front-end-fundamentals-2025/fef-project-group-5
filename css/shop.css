@@ -1,3 +1,10 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
 /*Navigation*/
 
 header {
@@ -40,7 +47,7 @@ a:hover {
   background: none;
   border: none;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   right: 1rem;
 }
 
@@ -82,6 +89,179 @@ body {
   background-color: #f9f9f9;
 }
 
+.image-section {
+  background-color: #e1dfd2; /* Light beige background */
+}
+
+.image-container {
+  display: flex;
+
+  max-width: 1400px;
+
+  gap: 5vw;
+}
+
+.room-image {
+  width: 50%;
+}
+
+.image-text {
+  width: 50%;
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #321a13;
+}
+
+.image-text h2 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #321a13;
+  padding-top: 6rem;
+}
+
+.image-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #604735;
+}
+.btn1 {
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+  background: none;
+  margin-top: 3vh;
+}
+.btn1 a {
+  color: white;
+}
+
+.btn1:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .dining-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .room-image,
+  .image-text {
+    width: 100%;
+  }
+}
+
+/* Image Section */
+.image-section {
+  background-color: #e1dfd2; /* Light beige background */
+}
+
+.image-container {
+  display: flex;
+
+  max-width: 1400px;
+
+  gap: 5vw;
+}
+
+.room-image {
+  width: 50%;
+}
+
+.image-text {
+  width: 50%;
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #321a13;
+}
+
+.image-text h2 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #321a13;
+  padding-top: 6rem;
+}
+
+.image-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #604735;
+}
+.btn1 {
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+  background: none;
+  margin-top: 3vh;
+}
+.btn1 a {
+  color: white;
+}
+
+.btn1:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* Responsive Design  */
+@media (max-width: 900px) {
+  .image-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .room-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-text {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .image-text h2 {
+    font-size: 2rem;
+  }
+
+  .image-text p {
+    font-size: 1rem;
+  }
+
+  .btn1 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .image-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .image-text p {
+    font-size: 0.9rem;
+  }
+
+  .btn1 {
+    font-size: 1.2rem;
+  }
+}
+
 h1 {
   font-family: "Italiana", serif;
   font-weight: 400;
@@ -89,8 +269,8 @@ h1 {
   font-size: 3rem;
   padding-top: 3rem;
   margin-top: 0;
-  margin-left: 1rem;
-  margin-bottom: 0;
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
   color: #321a13;
 }
 
@@ -112,12 +292,17 @@ h1 {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
+  transition: box-shadow;
+}
+.item:hover {
+  box-shadow: 1px 3px 8px #c8bda9;
+  transform: translateY(-2px);
 }
 
 .item img {
   width: 100%;
-  max-width: 10rem; /* Ensures images don’t grow beyond this size */
-  height: auto;
+  max-width: 10rem;
+  height: 15rem;
   object-fit: cover; /* Keeps the aspect ratio */
 }
 

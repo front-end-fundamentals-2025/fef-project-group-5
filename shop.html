@@ -34,12 +34,27 @@
       </nav>
     </header>
     <main>
-      <section class="items">
+      <section class="image-section">
+        <div class="image-container">
+          <img src="img/room1.jpg" alt="Our Products" class="room-image" />
+          <div class="image-text">
+            <h2>Our Products</h2>
+            <p>
+              Mira&Co offers luxurious mid-century modern furniture that
+              combines timeless design with premium craftsmanship. Our pieces
+              are crafted to elevate your space with sleek, functional, and
+              high-quality designs.
+            </p>
+            <button class="btn1"><a href="#items">Explore more↓</a></button>
+          </div>
+        </div>
+      </section>
+      <section id="items" class="items">
         <h1>Shop Our Items</h1>
         <div class="products">
           <div class="item">
             <img src="img/brown-chair.png" alt="Fantyun Chair" />
-            <p>Fanty – Armchair</p>
+            <p>Fanty – Arm chair</p>
             <p class="price">$299</p>
             <button class="button1">Add to Cart</button>
             <a href="detail.html">
@@ -51,21 +66,25 @@
             <p>Leif – Large Sofa</p>
             <p class="price">$867</p>
             <button class="button1">Add to Cart</button>
-            <button class="button2">See more</button>
+            <a href="detail2.html"><button class="button2">See more</button></a>
           </div>
           <div class="item">
             <img src="img/high-chair.jpg" alt="high chair" />
-            <p>Burvik – Dining-chair</p>
+            <p>Burvik – Dining chair</p>
             <p class="price">$189</p>
             <button class="button1">Add to Cart</button>
-            <button class="button2">See more</button>
+            <a href="detail3.html">
+              <button class="button2">See more</button></a
+            >
           </div>
           <div class="item">
             <img src="img/white-chair.png" alt="Lacque chair" />
-            <p>Lacque - Armchair</p>
+            <p>Lacque - Arm chair</p>
             <p class="price">$235</p>
             <button class="button1">Add to Cart</button>
-            <button class="button2">See more</button>
+            <a href="detail4.html">
+              <button class="button2">See more</button></a
+            >
           </div>
           <div class="item">
             <img src="img/bench.png" alt="Bench" />
@@ -116,6 +135,13 @@
             <button class="button1">Add to Cart</button>
             <button class="button2">See more</button>
           </div>
+          <div class="item">
+            <img src="img/red-sofa.jpg" alt="red sofa" />
+            <p>Martina - Red Sofa</p>
+            <p class="price">$1960</p>
+            <button class="button1">Add to Cart</button>
+            <button class="button2">See more</button>
+          </div>
         </div>
       </section>
     </main>
@@ -145,5 +171,6 @@
         <a href="#">Terms & Privacy</a>
       </div>
     </footer>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

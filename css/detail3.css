@@ -9,7 +9,6 @@ body {
   overflow-x: hidden;
 }
 /*Navigation*/
-
 header {
   display: flex;
   align-items: center;
@@ -125,7 +124,6 @@ body {
   object-fit: contain; /* Maintain image proportions */
   border-radius: 4px;
 }
-
 .product-info {
   flex: 1;
 }

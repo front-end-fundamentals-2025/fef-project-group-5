@@ -1,5 +1,4 @@
 /*Navigation*/
-
 header {
   display: flex;
   align-items: center;
@@ -13,10 +12,9 @@ header {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
-
   margin: 0;
 }
-ul {
+.navigation-links {
   font-family: "Raleway", serif;
   font-weight: 400;
   font-style: normal;
@@ -24,7 +22,7 @@ ul {
   list-style: none;
   padding-left: 0;
 }
-li {
+.navigation-links li {
   margin-left: 4rem;
 }
 
@@ -35,18 +33,42 @@ a {
 a:hover {
   color: gray;
 }
-@media screen and (max-width: 520px) {
-  header,
-  ul {
+.hamburger-menu {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+}
+
+/* Responsive Navigation for hamurger menu*/
+@media screen and (max-width: 900px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navigation-links {
+    display: none;
     flex-direction: column;
-    align-items: start;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 10;
   }
-  ul {
-    margin-top: 0;
+
+  .navigation-links li {
+    margin: 1rem 0;
   }
-  li {
-    margin-left: 0;
-    margin-bottom: 1rem;
+
+  .navigation-links.show {
+    display: flex;
   }
 }
 /*HERO*/
