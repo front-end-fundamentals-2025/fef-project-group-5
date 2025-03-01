@@ -2,7 +2,11 @@
 
 const heroSection = document.querySelector(".hero");
 const discoverBtn = document.querySelector(".discover-btn");
-const images = ["../img/hero2.jpg", "../img/hero1.jpg", "../img/hero3.jpeg"];
+const images = [
+  "../img/herofinal2.png",
+  "../img/herofinal.png",
+  "../img/hero1.jpg",
+];
 let index = 0;
 
 discoverBtn.addEventListener("mouseenter", () => {
