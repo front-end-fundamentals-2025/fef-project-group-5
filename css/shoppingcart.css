@@ -96,6 +96,100 @@ a:hover {
 }
 /*HERO*/
 /*Main*/
+/* Header */
+h1 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 1%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #604735;
+}
+#cart-items {
+  display: grid;
+  /*i need to find my reference that i lost here*/
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-left: 1%;
+}
+.cart-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vh, 1vh, 2vh, 2vh;
+}
+
+.cart-item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.cart-item p {
+  margin: 10px 0;
+  font-size: 18px;
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cart-item .remove-item {
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  border: 2px solid white;
+  color: #c8bda9;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #604735;
+}
+
+.cart-item .remove-item:hover {
+  color: #604735;
+  background: #c8bda9;
+}
+.cart-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#clear-cart {
+  padding: 15px 25px;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  border: 2px solid #604735;
+  cursor: pointer;
+  transition: 0.3s;
+  background: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#clear-cart:hover {
+  background: #c8bda9;
+}
 /*footer*/
 footer {
   font-family: "Raleway", serif;
