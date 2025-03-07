@@ -231,8 +231,8 @@
         <a href="#">Terms & Privacy</a>
       </div>
     </footer>
-    <script src="js/hamburger.js"></script>
-    <script>
+    <script src="js/hamburger.js" defer></script>
+    <script defer>
       function addToCart(name, price, img) {
         // Retrieve the current cart from localStorage
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
