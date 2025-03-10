@@ -93,8 +93,55 @@ a:hover {
     display: flex;
   }
 }
+
 /*HERO*/
 /*Main*/
+
+body {
+  font-family: "Raleway", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.image-section {
+  background-color: #e1dfd2; /* Light beige background */
+}
+.image-container {
+  display: flex;
+
+  max-width: 1400px;
+
+  gap: 5vw;
+}
+.room-image {
+  width: 100%;
+}
+
+.image-text {
+  width: 50%;
+  font-family: "Raleway", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #321a13;
+}
+
+.image-text h2 {
+  font-family: "Italiana", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #321a13;
+  padding-top: 6rem;
+}
+
+.image-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #604735;
+}
+
 /*footer*/
 footer {
   font-family: "Raleway", serif;
