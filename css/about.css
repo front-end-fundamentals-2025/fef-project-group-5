@@ -175,6 +175,18 @@ body {
   font-size: 1.1rem;
   line-height: 1.5;
 }
+.buy-btn {
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(99, 87, 68);
+  cursor: pointer;
+  transition: 0.3s;
+  background: none;
+}
+.buy-btn a {
+  color: rgb(99, 87, 68);
+}
 
 /* Responsive Adjustments */
 @media screen and (max-width: 900px) {

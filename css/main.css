@@ -17,6 +17,7 @@ header {
   padding: 1rem;
   justify-content: space-between; /*positioned */
   margin-right: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .header p {

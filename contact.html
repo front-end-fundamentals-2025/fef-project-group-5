@@ -33,10 +33,63 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- The code of the form was inspired by the code in the following link: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+      <h1>Book a meeting with Us!</h1>
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Jane" />
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Doe" />
+
+          <label for="email">Your email:</label>
+          <input
+            type="text"
+            id="email"
+            name="Your email"
+            placeholder="jane.doe@gmail.com"
+          />
+
+          <label for="subject">Message/Question:</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
     <footer class="footer">
-      <p>© Mira&Co 2025</p>
+      <div class="footer-logo">
+        <img src="img/Logo.png" alt="Logo" />
+      </div>
+      <nav class="footer-nav">
+        <a href="about.html">About Mira&Co</a>
+        <a href="login.html">Services</a>
+        <a href="contact.html">Book a Meeting</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="paragraph">
+        <strong>Introduction</strong>
+        <p>
+          Mira&Co is a luxury mid-century modern furniture brand known for
+          timeless elegance, premium materials, and impeccable
+          craftsmanship.Blending classic design with modern sophistication, each
+          piece embodies refined style and enduring quality.
+        </p>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2025 Mira&Co | Co-Created at Jönköping University |
+        <a href="#">Terms & Privacy</a>
+      </div>
     </footer>
+    <script src="js/main.js" defer></script>
     <script src="js/hamburger.js" defer></script>
   </body>
 </html>
