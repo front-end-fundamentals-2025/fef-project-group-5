@@ -1,12 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+html,
 body {
   width: 100%;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 /*Navigation*/
 header {
@@ -108,17 +105,24 @@ body {
   background-color: #e1dfd2; /* Light beige background */
 }
 .image-container {
-  display: flex;
-
-  max-width: 1400px;
-
-  gap: 5vw;
+  position: relative;
+  max-width: 1800px;
 }
 .room-image {
   width: 100%;
+  height: 80vh; /* Adjust this value to control height */
+  object-fit: cover; /* Ensures the image fills the area while cropping excess */
+  display: block;
+  opacity: 40%;
 }
-
 .image-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  padding: 2rem;
   width: 50%;
   font-family: "Raleway", serif;
   font-weight: 400;
@@ -140,6 +144,49 @@ body {
   font-size: 1.1rem;
   line-height: 1.5;
   color: #604735;
+}
+.quality-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem; /* Space between image and text */
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.quality-image img {
+  width: 300px; /* Set fixed square size */
+  height: 300px;
+  object-fit: cover; /* Ensures image stays proportional */
+  border-radius: 10px;
+}
+
+.quality-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Italiana", serif;
+  font-weight: 400;
+}
+.quality-text p {
+  max-width: 600px;
+  font-family: "Raleway", serif;
+  color: #321a13;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 900px) {
+  .quality-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .quality-image img {
+    width: 80%;
+    height: auto;
+  }
 }
 
 /*footer*/
