@@ -1,9 +1,7 @@
-html,
-body {
-  width: 100%;
+* {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  box-sizing: border-box;
 }
 /*Navigation*/
 header {
@@ -180,6 +178,7 @@ body {
   font-size: 0.7rem;
   border-radius: 1rem;
   border: 2px solid rgb(99, 87, 68);
+  margin-top: 2vh;
   cursor: pointer;
   transition: 0.3s;
   background: none;
@@ -198,6 +197,10 @@ body {
   .quality-image img {
     width: 80%;
     height: auto;
+  }
+  .image-text {
+    width: 80%; /* Make it more suitable for small screens */
+    padding: 1rem; /* Reduce padding */
   }
 }
 
@@ -247,4 +250,15 @@ footer {
 }
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav a {
+    margin: 10px 0;
+    display: block;
+  }
 }

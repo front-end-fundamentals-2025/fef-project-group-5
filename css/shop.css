@@ -5,6 +5,11 @@ body {
   padding: 0;
   overflow-x: hidden; /* Prevents horizontal scrolling */
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*Navigation*/
 
 header {
@@ -410,4 +415,15 @@ footer {
 }
 .footer-bottom a:hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-nav a {
+    margin: 10px 0;
+    display: block;
+  }
 }
