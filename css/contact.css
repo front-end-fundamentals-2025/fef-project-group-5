@@ -156,7 +156,7 @@ footer {
   background-color: #e1dfd2;
   color: #604735;
   text-align: center;
-  width: 100vw; /* Ensures the footer takes up the full viewport width */
+  width: 100vw;
   padding: 40px 20px;
   position: relative;
   left: 0;

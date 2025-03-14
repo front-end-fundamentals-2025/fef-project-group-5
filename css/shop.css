@@ -3,7 +3,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -16,7 +16,7 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem;
-  justify-content: space-between; /*positioned */
+  justify-content: space-between;
   margin-right: 2rem;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .image-section {
-  background-color: #e1dfd2; /* Light beige background */
+  background-color: #e1dfd2;
 }
 
 .image-container {
@@ -293,7 +293,7 @@ h1 {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 6vh;
   padding-bottom: 5vh;
   padding: 5vh;
@@ -320,7 +320,7 @@ h1 {
   width: 100%;
   max-width: 10rem;
   height: 15rem;
-  object-fit: cover; /* Keeps the aspect ratio */
+  object-fit: cover;
 }
 .item p {
   margin: 1vh;
@@ -356,19 +356,19 @@ h1 {
 
 @media (max-width: 900px) {
   .products {
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 640px) {
   .products {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 410px) {
   .products {
-    grid-template-columns: repeat(1, 1fr); /* 2 items per row */
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
