@@ -221,8 +221,8 @@ input {
   font-family: "Raleway", serif;
   font-size: 2rem;
   font-weight: 600;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
 }
 
 .price {
@@ -233,21 +233,22 @@ input {
   font-weight: 600;
 }
 
-.button {
-  background: #604735;
-  color: white;
-  padding: 0.7rem 5rem 0.7rem 5rem;
+.button1 {
+  background: #e1dfd2;
+  color: #321a13;
+
+  padding: 0.4rem 2rem 0.4rem 2rem;
   border: none;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
-.button:hover {
-  background: #c8bda9;
-  color: #321a13;
+.button1:hover {
+  background: #604735;
+  color: rgb(232, 228, 211);
 }
 
 .suggestions {
   margin-top: 4rem;
-  width: 100%;
 }
 h2 {
   font-family: "Raleway", serif;
@@ -287,7 +288,7 @@ h2 {
   box-shadow: 1px 3px 8px #c8bda9;
   transform: translateY(-2px);
 }
-.button1 {
+.button {
   background: #e1dfd2;
   color: #321a13;
   padding: 0.4rem 2rem 0.4rem 2rem;
@@ -296,7 +297,7 @@ h2 {
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
-.button1:hover {
+.button:hover {
   background: #604735;
   color: white;
 }
@@ -307,6 +308,7 @@ h2 {
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 4vh;
+  width: 80vw;
 }
 
 .review {
@@ -368,6 +370,84 @@ h2 {
   color: white;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+  #big-img {
+    width: 50vh;
+  }
+
+  #small-img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .product-info h1 {
+    width: 10vw;
+  }
+  .description,
+  .collapsible {
+    max-width: 30vw;
+  }
+
+  .reviews,
+  .suggestions,
+  .review-text {
+    max-width: 90vw;
+    padding: 15px;
+  }
+  .rating {
+    position: absolute;
+    margin-left: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    width: 100vw;
+  }
+  #big-img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+  }
+  .image-gallery {
+    max-width: 30%;
+    height: auto;
+  }
+  .reviews h2,
+  .suggestions h2 {
+    font-size: 20px;
+  }
+
+  .reviews p,
+  .suggestions p {
+    font-size: 16px;
+    max-width: 60vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-gallery img {
+    width: 100%; /* Full width images */
+    max-width: 300px;
+  }
+
+  .reviews,
+  .suggestions {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .reviews h2,
+  .suggestions h2 {
+    font-size: 18px;
+  }
+
+  .reviews p,
+  .suggestions p {
+    font-size: 14px;
+  }
+}
+
 /*footer*/
 footer {
   font-family: "Raleway", serif;

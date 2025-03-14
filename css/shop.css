@@ -178,7 +178,7 @@ body {
 
 /* Image Section */
 .image-section {
-  background-color: #e1dfd2; /* Light beige background */
+  background-color: #e1dfd2;
 }
 
 .image-container {
@@ -321,6 +321,9 @@ h1 {
   max-width: 10rem;
   height: 15rem;
   object-fit: cover; /* Keeps the aspect ratio */
+}
+.item p {
+  margin: 1vh;
 }
 
 .button1 {
